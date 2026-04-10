@@ -198,6 +198,24 @@
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
+@keyframes collapsible-up {
+  from { height: var(--radix-collapsible-content-height); }
+  to { height: 0; }
+}
+
+@keyframes collapsible-down {
+  from { height: 0; }
+  to { height: var(--radix-collapsible-content-height); }
+}
+
+.animate-collapsible-up {
+  animation: collapsible-up 0.2s ease-out;
+}
+
+.animate-collapsible-down {
+  animation: collapsible-down 0.2s ease-out;
+}
+
 .confetti {
   position: absolute;
   width: 10px;
